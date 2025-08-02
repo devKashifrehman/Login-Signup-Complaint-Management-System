@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "User Complaint Form";
+}
+@*<link rel="stylesheet" href="@Url.Content("~/Content/Style.css")" />*@
+
+<div class="login-container">
+    <h1>Welcome, @Session["UserEmail"]</h1>
+    <h2>You are successfully logged in.</h2>
+
+    @Html.Partial("Complain")
+</div>
+
+<script>
+    window.onload = function () {
+        var popup = document.getElementById("successPopup");
+        if (popup) {
+            setTimeout(function () {
+                popup.style.display = "none";
+            }, 60000); // 50 seconds
+        }
+    };
+</script>

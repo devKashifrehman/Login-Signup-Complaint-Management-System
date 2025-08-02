@@ -1,0 +1,33 @@
+﻿<link rel="stylesheet" href="@Url.Content("~/Content/complain.css")" />
+
+<!-- Complaint Form -->
+<form class="complaint-form" method="post" action="@Url.Action("SubmitComplaint", "Home")">
+    <h3>User Details & Complaint</h3>
+
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="FullName" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="Email" value="@Session["UserEmail"]" readonly />
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="Phone" required />
+
+    <label for="subject">Complaint Subject:</label>
+    <input type="text" id="subject" name="Subject" required />
+
+    <label for="message">Complaint Details:</label>
+    <textarea id="message" name="Message" rows="5" required></textarea>
+
+    <!-- Buttons in one row -->
+    <div class="button-row">
+        <!-- Logout Button (form outside main form using JS) -->
+        <button type="button" class="logout-btn" onclick="document.getElementById('logoutForm').submit();">Logout</button>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Submit Complaint</button>
+    </div>
+</form>
+
+<!-- Hidden Logout Form (outside) -->
+<form id="logoutForm" method="post" action="@Url.Action("Logout", "Home")"></form>

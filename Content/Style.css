@@ -1,0 +1,148 @@
+﻿/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.login-container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+    .login-container:hover {
+        transform: scale(1.03);
+    }
+
+    /* Heading */
+    .login-container h2 {
+        margin-bottom: 25px;
+        color: #333;
+    }
+
+/* Input group */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .input-group input:focus {
+            border-color: #00b4db;
+            box-shadow: 0 0 8px rgba(0, 180, 219, 0.4);
+            outline: none;
+        }
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #00b4db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+    button:hover {
+        background: #0083b0;
+        transform: scale(1.05);
+    }
+
+.signup-btn {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0083b0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s;
+}
+
+    .signup-btn:hover {
+        color: #00b4db;
+        transform: scale(1.05);
+    }
+.logout-btn {
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    background: #dc3545;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.complaint-form {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+    .complaint-form input,
+    .complaint-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .complaint-form button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .complaint-form button:hover {
+            background-color: #0056b3;
+        }
+.success-popup {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+}
+

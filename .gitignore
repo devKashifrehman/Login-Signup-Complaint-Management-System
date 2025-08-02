@@ -1,0 +1,15 @@
+﻿# Ignore Visual Studio files and folders
+.vs/
+*.user
+*.suo
+
+# Ignore build results
+bin/
+obj/
+
+# Ignore EF database files (if local DB is used)
+*.mdf
+*.ldf
+
+# Ignore logs and temp files
+*.log
